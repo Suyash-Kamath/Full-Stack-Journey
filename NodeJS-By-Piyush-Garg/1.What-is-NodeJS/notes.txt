@@ -1,0 +1,18 @@
+JavaScript is a language of Browser jisse Browser ko interactivity dete hai
+we execute it in Browser, 
+Browser has JavaScript engine (Chrome has Chrome V8 engine)
+JavaScript Behaves differently in different Browser kyuki sabke apne apne engine hai
+
+V8 engine ko extract kiya and C++ ke andhar machine functionality hai , uske wajase JavaScript bahar execute
+
+JavaScript can talk to native machine because of C++ means JavaScript se bhi file handling dekh sakte
+Jo C++ machine level pe kar sakti hai wo JavaScript bhi kar sakti kyuki internally C++ hi use karti hai
+
+JavaScript c++ ke saath embed , JavaScript v8 engine ko use karke execute ho raha hai which is inside C++
+
+We can now create our own web servers
+
+NodeJS is a runtimme environment for JavaScript (jiske andhar JavaScript ko execute kar sakte hai)
+
+
+Prerequisites for NodeJS -> JavaScript
