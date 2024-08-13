@@ -1,0 +1,3 @@
+Good pratice is to have modular programming
+
+Every file in NodeJS , is a module
