@@ -1,0 +1,19 @@
+logs.txt me I got 404 Not found
+
+what happened is
+
+/about?myname=suyash
+
+HTTP module ko req.url ko aise wale ko parse karna nahi aata
+
+use pata nahi ki ? se pehele karna seperateout ya nahi 
+
+kya  query parameters hai usse nahi pata 
+
+so download
+
+url package
+
+npm install url
+
+what it does is identify karega konsa url and konsa query hai 
