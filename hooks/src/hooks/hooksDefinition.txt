@@ -1,0 +1,119 @@
+What is Hooks ?
+
+Hooks are special functions, that allow us to use state and other React Features in functional components.
+Earlier, When we used to create react app using functional components, then we didn't have the access to the 
+state manangement and lifecycle methods.
+
+To access these features we have to add the class components
+
+So this was the problem of functional components.
+
+But after introducing the React Hooks from version 16.8 , we can use state manangement and other react features
+without writing class components
+
+In other words, Hooks are the functions that make functional components work like class components
+Hooks make react functional components so easy to use.
+
+Developers prefer functional components over class components
+
+
+Benefits of React Hooks
+
+React hooks simplify the code , improves the readability , reusability and overall performance of the application
+
+
+1.useState
+
+useState is a react hook , which creates an 'state variable', which helps us to track state in components & updates the user
+interface when state changes
+
+
+2.useEffect
+
+The useEffect hook allows you to perform side effects in your components
+Some examples of side effect are : Fetching data from API , Directly updating the DOM and Timers like setTimeout and setInterval
+
+
+3.useRef hook
+
+useRef is a react hook that allow us to create mutable variables which will not re-render the components
+In simple term , when we declare variable using useRef and when variable value changes then it will not re-render the components
+
+useRef is also used for accessing DOM elements.
+
+4.useMemo Hooks
+
+The React useMemo hook returns a memoized value, means it is like caching a value so that it doesn't
+need to be recalculated
+useMemo Hook only runs when one of its dependencies gets updated
+This can improve the performance of the application. There is one more hook in react to improve
+performance, that is useCallback hook.
+The useMemo and  useCallback hooks are similar. The main differenece is 
+-useMemo returns a memoized value
+-useCallback returns a memoized function
+
+
+5.useCallback hooks
+
+It is a hook that lets you cache a function definition between re-renders
+It means, when we use useCallback hook , it doesn't create multiple instance of same function
+when rerender happens
+Instead of creating a new instance of the function, it provides the cached function on re-render of
+the components.
+
+
+Referential equality (also known as reference equality) refers to the concept of comparing two variables to check whether they refer to the exact same object in memory. In contrast to value equality, which checks whether two objects have the same content, referential equality checks if they are pointing to the same memory address (i.e., they are the same instance of an object).
+
+Example:
+In JavaScript and many other languages, referential equality is used when comparing complex types such as objects or arrays. Here's a simple example to explain:
+
+javascript
+Copy code
+const obj1 = { name: "Suyash" };
+const obj2 = { name: "Suyash" };
+const obj3 = obj1;
+
+console.log(obj1 === obj2); // false, because they are different objects in memory
+console.log(obj1 === obj3); // true, because they point to the same object in memory
+In this case:
+
+obj1 and obj2 contain the same content, but they are not referentially equal because they are stored in different memory locations.
+obj1 and obj3 are referentially equal because they refer to the same object in memory (i.e., obj3 is a reference to obj1).
+Referential Equality vs Value Equality:
+Referential equality: Compares if two variables point to the same object in memory (same reference).
+Value equality: Compares if two objects have the same content, regardless of where they are stored in memory.
+For primitive types like numbers, strings, and booleans, referential equality and value equality often coincide because they are immutable. But for objects, arrays, and functions, referential equality differs from value equality.
+
+Referential equality is significant when dealing with immutability, object mutations, and state management in React and other frameworks.
+
+
+6.useContext Hook
+
+useContext is a react hook that allows you to access data from any component without explicitly
+passing it down through props at every component level
+useContext is used to manage Global Data in the react app
+You use this to avoid child->parent->child prop passing
+means avoid sending data in every unnecessary nested component level
+
+Step 1: create context
+Step 2: provides context
+Step 3: consuming context
+
+Context API can be used to share any kind of data including functions,arrays,objects
+Most common use of Context API is to share current theme of an application to all its component
+or to share the  authenticated users with all our component or to share a result of API call with all of our component
+which will reduce the number of API calls
+
+7.useReducer Hook
+
+useReducer is similar to useState, But instead of providing state and setter function. It provides state
+and dispatch.
+useReducer Hook accepts two arguments
+-Reducer function
+-Initial state
+and returns: Current state and Dispatch methods
+
+The reducer function specifies how the state gets updated
+
+when we use useState hook, we update state variables using setter function , when we use useReducer
+We can efficiently update state variable for different actions.
