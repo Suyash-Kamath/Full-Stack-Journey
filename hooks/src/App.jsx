@@ -6,6 +6,8 @@ import UseMemoHooks from './hooks/UseMemoHooks'
 import UseCallbackHooks from './hooks/UseCallbackHooks'
 import UseContextHooks from './hooks/UseContextHooks'
 import UseReducerHook from './hooks/UseReducerHook'
+import UseLayoutEffectHook from './hooks/UseLayoutHookEffect'
+import CustomHook from './hooks/CustomHook'
 function App() {
 
    return (
@@ -14,7 +16,8 @@ function App() {
    // <UseMemoHooks/>
    // <UseCallbackHooks/>
    // <UseContextHooks/>
-   <UseReducerHook/>
+   // <UseLayoutEffectHook/>
+   <CustomHook/>
 
    )
 }

@@ -117,3 +117,25 @@ The reducer function specifies how the state gets updated
 
 when we use useState hook, we update state variables using setter function , when we use useReducer
 We can efficiently update state variable for different actions.
+
+8.useLayoutEffect hook
+
+useLayoutEffect works similar to useEffect, but it is called before the user interface gets mounted.
+useEffect gets called after printing the DOM elements , but useLayoutEffect gets called before printing the
+DOM elements
+example: if you create a layout using DOM elements and want to change the layout color using useEffect then
+it will display the DOM element and after it will change which will cause flickering issue
+
+so when change color using useLayoutEffect then first it will change the color and after that, it will display DOM element
+or web page 
+
+useLayoutEffect can be used for calling APIs, printing the DOM elements and fixing the flickering
+
+But react docs says useLayoutEffect can hurt the performance of an app , so recommended to use , useEffect
+
+9.Custom Hooks
+
+React allows us to create  our own hook which is known as Custom hook
+Why do we create Custom Hook ?
+
+lets say you have component logic that need to be used by multiple components, so extract that logic to create a custom hook
